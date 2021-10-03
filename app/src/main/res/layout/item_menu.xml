@@ -25,6 +25,4 @@
         android:textStyle="bold"
         app:fontFamily="@font/circularstd_medium"
         tools:text="@string/app_name" />
-
-
 </RelativeLayout>
