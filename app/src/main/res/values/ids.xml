@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_navigation_home_to_navigation_pokedex" type="id" />
+    <item name="navigation_pokedex" type="id" />
+    <item name="navigation_zenith" type="id" />
+    <item name="action_navigation_zenith_to_navigation_dashboard" type="id" />
+    <item name="textViewID" type="id" />
+</resources>
