@@ -5,7 +5,7 @@ import androidx.room.RoomDatabase
 import com.simdamsi.zenith.database.dao.ZenithDAO
 import com.simdamsi.zenith.model.Mountain
 
-@Database(entities = [Mountain::class], version = 1, exportSchema = false)
+@Database(entities = [Mountain::class], version = 2, exportSchema = false)
 
 abstract class AppDatabase : RoomDatabase() {
 

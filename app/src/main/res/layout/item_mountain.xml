@@ -6,11 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="120dp"
     android:layout_margin="8dp"
+    android:background="@color/fortuna_gold"
     android:clickable="true"
     android:clipToPadding="false"
     android:focusable="true"
-    android:padding="8dp"
-    tools:backgroundTint="@color/lightTeal">
+    android:padding="8dp">
     <!--android:background="@drawable/background_item_pokemon"-->
 
     <TextView
@@ -26,59 +26,30 @@
         app:fontFamily="@font/circularstd_medium"
         tools:text="Titulo" />
 
+
+    <!--android:background="@drawable/background_item_pokemon_span"-->
+
+    <!--android:background="@drawable/background_item_pokemon_span"-->
+    <!--android:background="@drawable/background_item_pokemon_span"-->
+
     <TextView
-        android:id="@+id/textViewID"
-        android:layout_width="wrap_content"
+        android:id="@+id/textViewAlt"
+        android:layout_width="69dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/textViewName"
+        android:layout_alignStart="@+id/textViewName"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="52dp"
         android:alpha="0.25"
         android:gravity="top"
-        android:text="#001"
+        android:text="000m"
         android:textSize="18sp"
         android:textStyle="bold"
         tools:text="000m" />
-
-
-    <TextView
-        android:id="@+id/textViewType1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/textViewType2"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="8dp"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
-        android:text="Grass"
-        android:textColor="@color/white"
-        android:textSize="14sp" />
-    <!--android:background="@drawable/background_item_pokemon_span"-->
-
-    <TextView
-        android:id="@+id/textViewType2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/textViewType3"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="8dp"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
-        android:text="Grass"
-        android:textColor="@color/white"
-        android:textSize="14sp" />
-    <!--android:background="@drawable/background_item_pokemon_span"-->
-    <TextView
-        android:id="@+id/textViewType3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
-        android:text="Grass"
-        android:textColor="@color/white"
-        android:textSize="14sp" />
-    <!--android:background="@drawable/background_item_pokemon_span"-->
 
     <ImageView
         android:layout_width="96dp"

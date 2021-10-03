@@ -12,7 +12,7 @@ class Mountain {
     @NonNull
     var id: String? = null
     var name: String? = null
-    var alt: Double? = null
+    var altitude: Double? = null
     var massif: String? = null
     var coords: String? = null
     var pays: String? = null

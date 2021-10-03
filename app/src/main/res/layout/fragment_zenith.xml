@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/tidewaterGreen"
     android:fitsSystemWindows="true">
 
     <ImageView
@@ -23,7 +23,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="180dp"
-        android:background="@android:color/transparent"
+        android:background="@color/tidewaterGreen"
         android:fitsSystemWindows="false"
         app:elevation="0dp">
 
@@ -61,7 +61,7 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
+        android:background="@color/set_sail_champagne"
         android:overScrollMode="never"
         android:paddingStart="8dp"
         android:paddingEnd="8dp"
@@ -69,7 +69,7 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:itemCount="20"
         tools:listitem="@layout/item_mountain"
-        tools:spanCount="2" />
+        tools:spanCount="1" />
 
     <!--<com.leinardi.android.speeddial.SpeedDialView
         android:id="@+id/speedDial"

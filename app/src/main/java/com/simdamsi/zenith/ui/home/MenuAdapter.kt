@@ -3,7 +3,6 @@ package com.simdamsi.zenith.ui.home
 import android.content.Context
 import android.graphics.PorterDuff
 import android.graphics.PorterDuffColorFilter
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -28,7 +27,6 @@ class MenuAdapter(
                 PorterDuffColorFilter(color, PorterDuff.Mode.SRC_ATOP)
 
             itemView.setOnClickListener {
-                Log.i("click listener", "click")
                 it.findNavController().navigate(R.id.action_navigation_home_to_zenithFragment)
             }
         }

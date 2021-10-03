@@ -1,7 +1,6 @@
 package com.simdamsi.zenith.ui.zenith
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -24,24 +23,20 @@ class ZenithFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        Log.i("Oncreateview", "uhm")
         return inflater.inflate(R.layout.fragment_zenith, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        Log.i("Onviewcrated", "uhm")
         super.onViewCreated(view, savedInstanceState)
         activity?.window?.statusBarColor =
             ColorUtil(view.context).convertColor(R.color.background)
 
         val progressBar = progressBar
         val recyclerView = recyclerView
-        val layoutManager = GridLayoutManager(context, 2)
+        val layoutManager = GridLayoutManager(context, 1)
         recyclerView.layoutManager = layoutManager
-        Log.i("before getlistmountain", "uhm")
 
         zenithViewModel.getListMountain().observe(viewLifecycleOwner, Observer {
-            Log.i("getlistMountain", "uhm")
             val mountains: List<Mountain> = it
             recyclerView.adapter = ZenithAdapter(mountains, view.context)
             if (mountains.isNotEmpty())

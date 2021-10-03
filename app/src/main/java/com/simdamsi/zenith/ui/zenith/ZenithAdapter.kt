@@ -1,6 +1,7 @@
 package com.simdamsi.zenith.ui.zenith
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -20,7 +21,7 @@ class ZenithAdapter(
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bindView(item: Mountain) {
             itemView.textViewName.text = item.name
-            itemView.textViewID.text = item.id
+            itemView.textViewAlt.text = item.altitude?.let { showAlt(it) }
 
 
             /*Glide.with(itemView.context)
@@ -33,6 +34,17 @@ class ZenithAdapter(
                 it.findNavController()
                     .navigate(R.id.action_navigation_zenith_to_navigation_dashboard, bundle)
             }
+        }
+
+        private fun showAlt(alt: Double): String {
+            val newAlt: String
+            if (alt.toString().split(".")[1] == "0") {
+                newAlt = alt.toString().split(".")[0]
+                Log.i("showAlt", "c'est ,0")
+            } else {
+                newAlt = alt.toString()
+            }
+            return "$newAlt m"
         }
     }
 
@@ -49,4 +61,6 @@ class ZenithAdapter(
     override fun getItemCount(): Int {
         return list.size
     }
+
+
 }
