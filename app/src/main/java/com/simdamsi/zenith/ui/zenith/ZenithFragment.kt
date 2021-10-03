@@ -20,7 +20,6 @@ class ZenithFragment : Fragment() {
     private val zenithViewModel: ZenithViewModel by viewModel()
 
     override fun onCreateView(
-
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?

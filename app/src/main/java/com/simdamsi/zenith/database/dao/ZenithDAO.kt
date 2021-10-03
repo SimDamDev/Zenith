@@ -7,8 +7,8 @@ import com.simdamsi.zenith.model.Mountain
 @Dao
 interface ZenithDAO {
 
-    @Query("SELECT * FROM mountain WHERE alt = :alt")
-    fun getById(alt: Double?): LiveData<Mountain>
+    @Query("SELECT * FROM mountain WHERE id = :id")
+    fun getById(id: String?): LiveData<Mountain>
 
     @Query("SELECT * FROM mountain")
     fun all(): LiveData<List<Mountain>>

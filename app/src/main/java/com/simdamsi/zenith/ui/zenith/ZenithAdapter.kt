@@ -4,6 +4,8 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.simdamsi.zenith.R
 import com.simdamsi.zenith.model.Mountain
@@ -18,7 +20,7 @@ class ZenithAdapter(
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bindView(item: Mountain) {
             itemView.textViewName.text = item.name
-            itemView.textViewAlt.text = item.alt.toString()
+            itemView.textViewID.text = item.id
 
 
             /*Glide.with(itemView.context)
@@ -26,11 +28,11 @@ class ZenithAdapter(
                 .placeholder(android.R.color.transparent)
                 .into(itemView.imageView)*/
 
-            /*itemView.setOnClickListener {
-                var bundle = bundleOf("alt" to item.alt)
+            itemView.setOnClickListener {
+                var bundle = bundleOf("id" to item.id)
                 it.findNavController()
                     .navigate(R.id.action_navigation_zenith_to_navigation_dashboard, bundle)
-            }*/
+            }
         }
     }
 
